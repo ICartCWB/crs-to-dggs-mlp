@@ -1,0 +1,12 @@
+{
+    "num_hidden_layers": 3,
+    "n_units_1": 512,
+    "n_units_2": 512,
+    "n_units_3": 1024,
+    "activation": "tanh",
+    "optimizer": "adam",
+    "lr": 0.00032559986818454475,
+    "batch_size": 64,
+    "dropout": 0.007363372617554281,
+    "l2": 0.0009186983777395298
+}
