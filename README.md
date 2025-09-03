@@ -2,7 +2,7 @@
 
 Este repositório contém o código e a análise completa da pesquisa que investiga o uso de Redes Neurais (Perceptrons de Múltiplas Camadas - MLPs) para a transformação de coordenadas geográficas (CRS) em índices de Sistemas de Grade Global Discreta (DGGS), com foco em aplicações para Cubos de Dados de Sensoriamento Remoto.
 
-O notebook principal, contendo todo o desenvolvimento, experimentação e análise, pode ser visualizado aqui:
+O notebook principal, contendo todo o desenvolvimento, experimentação e análise, pode ser visualizado em:
 [artigo_CRS_MLP_DGGS.ipynb](https://github.com/ICartCWB/crs-to-dggs-mlp/blob/main/artigo_CRS_MLP_DGGS.ipynb)
 
 ## Resumo (Abstract)
