@@ -61,7 +61,7 @@ A busca de hiperparâmetros em duas fases (exploratória e refinada) com o Optun
 * **Modelo H3:** 8,1 horas no total (1,4h na busca exploratória + 6,7h na busca refinada).
 * **Modelo rHEALPix:** 8,4 horas no total (1,5h na busca exploratória + 6,9h na busca refinada).
 
-### Tempos de Execução
+### Treinamento dos Modelos Finais
 
 Os tempos médios de treinamento, extraídos dos logs de execução, revelam uma diferença significativa de performance entre os modelos, especialmente em grande escala:
 
