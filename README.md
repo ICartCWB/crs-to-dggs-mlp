@@ -23,3 +23,29 @@ O projeto foi executado em quatro fases principais:
 2. Otimização de Hiperparâmetros: Um processo de duas fases com Optuna e Validação Cruzada Estratificada (K-Fold) para encontrar a arquitetura de modelo e os parâmetros de treinamento ideais.
 3. Treinamento do Modelo: Treinamento de quatro modelos finais (H3/WGS84, H3/Córrego Alegre, rHEALPix/WGS84, rHEALPix/Córrego Alegre) com os melhores hiperparâmetros em datasets de 10k, 100k e 1M de pontos.
 4. Análise Estatística: Uso de ANOVA e testes post-hoc de Tukey HSD para avaliar formalmente o impacto dos fatores experimentais (volume de treino, latitude) e do bloco (CRS) na MCR.
+
+## Ambiente de Execução
+
+Todos os experimentos foram conduzidos em um único ambiente computacional para garantir a consistência dos resultados. As especificações do sistema utilizado são:
+
+### Hardware
+* **CPU:** `AMD Ryzen 7 7800X3D 4.20GHz`
+* **GPU:** `AMD RX 6750 XT (12 GB VRAM)`
+* **Memória RAM:** `64 GB DDR5`
+* **Armazenamento:** `2 TB NVMe SSD`
+
+### Software
+* **Sistema Operacional:** `Windows 11`
+* **Versão do Python:** `3.10.6`
+* **Framework de ML:** `TensorFlow 2.14.0`
+* **Principais Bibliotecas:**
+    * `pyproj`
+    * `h3` 
+    * `rhealpixdggs` 
+    * `scikit-learn`
+    * `optuna` 
+    * `pandas`
+    * `numpy` 
+    * `jupyterlab`
+* **Drivers:**
+    * **Driver AMD:** `Adrenalin 25.5.1`
