@@ -49,3 +49,29 @@ Todos os experimentos foram conduzidos em um único ambiente computacional para 
     * `jupyterlab`
 * **Drivers:**
     * **Driver AMD:** `Adrenalin 25.5.1`
+
+## Performance Computacional e Tempos de Execução
+
+Os tempos de execução foram registrados para as etapas computacionalmente mais intensivas do projeto, utilizando o hardware especificado na seção anterior. O tempo total de processamento, desde a geração dos dados até a análise final, foi de aproximadamente **42 horas**.
+
+### Otimização de Hiperparâmetros
+
+A busca de hiperparâmetros em duas fases (exploratória e refinada) com o Optuna foi a etapa mais demorada:
+
+* **Modelo H3:** 8,1 horas no total (1,4h na busca exploratória + 6,7h na busca refinada).
+* **Modelo rHEALPix:** 8,4 horas no total (1,5h na busca exploratória + 6,9h na busca refinada).
+
+### Tempos de Execução
+
+Os tempos médios de treinamento, extraídos dos logs de execução, revelam uma diferença significativa de performance entre os modelos, especialmente em grande escala:
+
+* **Modelo H3:**
+    * 10 mil pontos: **~1,3 minutos**
+    * 100 mil pontos: **~25 minutos**
+    * 1 milhão de pontos: **~5,1 horas**
+* **Modelo rHEALPix:**
+    * 10 mil pontos: **~45 segundos**
+    * 100 mil pontos: **~7 minutos**
+    * 1 milhão de pontos: **~1,9 horas**
+
+A maior complexidade topológica da grade H3 resulta em tempos de treinamento consideravelmente maiores à medida que o volume de dados aumenta.
